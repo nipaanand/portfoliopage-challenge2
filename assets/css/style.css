@@ -82,6 +82,7 @@ h4{
 }
 .main{
     width:100%;
+    margin: top 30px;
     max-width: 100%;    
     margin:0 10px 0 0;
     display:flex;
@@ -121,9 +122,9 @@ h4{
     text-decoration: wavy;
 }
 .resume{
-  height: 100px;  
-  max-width:50%;
-  margin:30px auto;
+  height: auto;  
+  max-width:95%;
+  padding-top:10px;
 }
 .resume-link{
     padding:20px;
@@ -131,12 +132,18 @@ h4{
 .resume h2{
     color:blueviolet;
 }
+/*text area where resume pasted*/
 .resume textarea{
-    height:auto;
-    width:100%;
-
+    justify-content: center;
+    width: 200px;
+    height: 400px;
 }
+/*contact section which is as footer*/
 .contact{
+    display:flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
     height:200px;
     width:auto;
     max-width:50%;
@@ -146,8 +153,83 @@ h4{
     color:#fcfcfc;
     font-family: Arial, Helvetica, sans-serif   ;
 }
-.contact-me  h2,h4,h5{
+.contact-me  h2,h3{
     color:white;
 }
 
+/*To make page responsive use Media Query*/
+/* When using `max-width` as the breakpoint, must go from widest to narrowest to avoid conflict */
+
+
+/* Tablets - header changes color */
+
+@media screen and (max-width: 768px) {
+    .hero {
+        background: #772014;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .resume{
+        padding:200px;  
+    }
+
+}
+/* Large smartphones - navbar changes color */
+
+@media screen and (max-width: 668x) {
+    nav {
+        background-color: #bb8588;
+        align-items: flex-start ;
+    }
+    .resume{
+        width:50%;
+        margin: 400px auto 250px;
+
+        position: relative;
+
+
+    }
+    .about{
+        width:50%;  
+
+    }
+}
+
+
+/* Small smartphones - image placeholders change color */
+
+@media screen and (max-width: 576px) {
+    ul {
+        display:block;
+    }
+    .main img{
+        display: flex;
+        flex-direction: column;
+        justify-content:center ;
+        width:25%;
+        
+    }
+    .skills{
+        width:25%;
+        padding-bottom: 20px;
+    }
+    .skills h2{
+        margin:0 auto;
+        width:50%;
+        float: right;
+
+    
+    }
+    .skills .gallery{
+        margin-top:20px;
+        width:25%
+    }
+    .resume{
+        width:25%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
