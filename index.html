@@ -8,42 +8,48 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <!--hero section starts here-->
-    <section class ="hero">
-    <!--navigation menu-->
+   
+     <!--header starts-->
     
-        <nav>
+        <header>
             <h2 class="logo">Portfo<span>lio</span></h2>
+            <!--navigation  menu-->
+            <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#resume">Resume</a></li>
+                <li><a href="./assets/images/resume.pdf" target="_blank">My Resume</a></li>
                 <li><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
         </section>
     
-         <!--section Home starts-->
-        <section class="home" id ="home">
-            <h3>I am Nipa Mehta</h3>
-            <h4>I am A Web Developer</h4>
-        </section>
-        <section class="about" id ="about">
-            <div class="main">
+         <!--section hero starts-->
+        <section class="hero">
+            <!--hero image starts-->
+            <div>
                 <img src="https://via.placeholder.com/150" alt="my-photo"/>
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <h5>Developer & Designer</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </div>
+        </section>
+
+        <!--About me section starts-->
+        <section id="about-me" class="about-me">
+            <div class="title">
+                <h2>About Me</h2>
+            </div>
+            <div>
+                    
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                         Harum reprehenderit architecto itaque doloribus maiores aperiam perspiciatis corrupti possimus.
                         Libero dolore facilis voluptatibus et laudantium nulla numquam dolorem, itaque maxime fuga.</p>
-                    </div>
+            </div>
         </div>
     </section>
-    <section class="skills" id ="skills">
+
+    <!--<section class="skills" id ="skills">
         <div class="title">
-            <h2>Skills</h2>
+            <h2>My Skills</h2>
             <div class="gallery">
                 <img src="./assets/images/htmlan.jpeg" alt="htmlcssjsskills" />
                 <img src="./assets/images/asp.netmvc.jpeg" alt="asp.netskills" />
@@ -51,20 +57,41 @@
                 <img src="./assets/images/pythonskills.jpeg" alt="pythonskills" />
             </div>
         </div>
-    </section>
-    <section class="resume" id ="resume">
-        
-          <h2><a href="#">Resume</a></h2>
-          <p><textarea>Coming Soon</textarea></p>
+    </section>-->
+    <section id ="skills" class="skills">
+        <div class="title"><h2>My Skill</h2></div>
+        <div class="projects-grid-wrapper">
+            <div class="project-grid">
+               <img src="./assets/images/htmlcssjs.jpeg" alt="htmlcssjsskills" width="1000px"height="200px" class="htmllan" />
+               <img src="./assets/images/asp.netmvc.jpeg" alt="asp.netskills" class="aspmvc" height="300px"width="400px" />
+               <img src="./assets/images/sqlskill.png" alt="sqlskills" class="sqlskills"height="300px"width="400px" />
+               <img src="./assets/images/pythonskills.jpeg" alt="pythonskills" />
+            </div>
+            
         </div>
-    </section>
-    <footer class="contact" id="contact">
-        <div class="contact-me">
-            <h2>Contact Me</h2>
-            <h3><strong>E-mail: </strong><a href="https://www.mail.com">abc.def@mail.com</a><br>
-            <strong>Cell No:</strong>+1(123)456-7890</h3>
-        </div>
-    </footer
 
+    </section>
+    
+    <footer class="contact-me" id="contact-me">
+        <div class="title">
+            <h2>Contact Me</h2>
+        </div>
+            <div class="content-wrapper">
+                <ul>
+                    <li>
+                        <a href="mailto:abc123@gmail.com">E-mail</a>
+                    </li>
+                    <li>
+                        <a href="https://www.github.com//nipaanand" target="_blank">Github</a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/in/nipamehta/" target="_blank">LinkedIn</a>
+                    </li>
+                    <li>
+                        <p>(123)456-5555</p>
+                    </li>
+                </ul>
+            </div>
+    </footer>
 </body>
 </html>
