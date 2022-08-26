@@ -31,5 +31,6 @@ Advanced CSS Challenge: Professional Portfolio
  [https://github.com/nipaanand/portfoliopage-challenge2.git]
 
 
-## [Github](#github)
-https://www.github.com/nipanand
+# [Author](#author)
+- Github   
+[Nipa Mehta](https://www.github.com/nipaanand)
